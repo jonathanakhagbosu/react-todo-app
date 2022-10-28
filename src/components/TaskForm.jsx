@@ -29,7 +29,7 @@ const Taskform = () => {
     <form onSubmit={submit}>
       <input
         type="text"
-        placeholder="add some text"
+        placeholder="add todo..."
         onChange={handleChange}
         value={task}
       />
