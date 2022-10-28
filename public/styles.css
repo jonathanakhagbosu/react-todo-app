@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Raleway:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-logo: #333333;
+  --clr-placeholder: #828282;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-gray: #bdbdbd;
+  --clr-blue: #2f80ed;
+  --clr-red: #eb5757;
+}
+
+.container {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin: 32px 0 16px;
+  gap: 60px;
+}
+
+.logo {
+  color: var(--clr-logo);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 200px;
+  border-bottom: 1px solid var(--clr-gray);
+}
+
+.nav-links a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--clr-logo);
+  text-decoration: none;
+  padding: 0 40px 15px;
+}
+
+nav a:hover,
+.active {
+  border-bottom: 4px solid var(--clr-blue);
+}
+
+form {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 20px auto;
+}
+
+input[type="text"] {
+  width: 80%;
+  height: 60px;
+  color: var(--clr-black);
+  border-radius: 12px;
+  border: 1px solid var(--clr-gray);
+  padding-inline: 12px;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+input[type="text"]:hover {
+  transform: scale(1.01);
+}
+
+input[type="text"]:focus {
+  border: 1px solid var(--clr-blue);
+}
+
+input::placeholder {
+  color: var(--clr-placeholder);
+}
+
+button {
+  color: var(--clr-white);
+  background-color: var(--clr-blue);
+  border: none;
+  border-radius: 12px;
+  width: 100px;
+  height: 56px;
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(127, 177, 243, 0.4);
+}
+
+button:hover {
+  transform: scale(1.01);
+}
+
+.task {
+  display: flex;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: 1px solid var(--clr-placeholder);
+  display: inline;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.01);
+}
+
+.completed {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.completed-task {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 24px;
+}
+
+.delete-all {
+  float: right;
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+}
